@@ -76,8 +76,8 @@ void main() {
     xram0_struct_set(RULER_CONFIG, vga_mode3_config_t, xram_palette_ptr, DEFAULT_PALETTE);
     draw_ruler();
 
-    xreg_vga_mode(3, 2, RULER_CONFIG, 0);
-    xreg_vga_mode(3, 2, CANVAS_CONFIG, 1);
+    xreg_vga_mode(3, 3, RULER_CONFIG, 0);
+    xreg_vga_mode(3, 3, CANVAS_CONFIG, 1);
 
     xreg_ria_keyboard(KEYBOARD_INPUT);
     while (1)
